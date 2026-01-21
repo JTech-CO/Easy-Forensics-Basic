@@ -2,6 +2,8 @@
 
 > 브라우저 기반 이미지 조작 분석 도구 (기본 버전)
 
+<img width="2550" height="1526" alt="image" src="https://i.imgur.com/pMMyuZG.png" />
+
 ## 1. 소개 (Introduction)
 
 Easy Forensics Basic은 웹 브라우저에서 실행되는 이미지 조작 분석 도구입니다. 별도의 소프트웨어 설치 없이 브라우저만으로 이미지의 조작 여부를 검증할 수 있습니다. 모든 처리는 클라이언트 측에서 이루어지며, 이미지 데이터는 외부로 전송되지 않습니다.
@@ -68,5 +70,6 @@ Basic/
 - **License**: MIT
 - **Version**: Basic
 - **Browser Support**: 최신 브라우저 권장 (Canvas API, FileReader API 지원 필요)
+
 
 

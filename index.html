@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Forensics Basic</title>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Easy Forensics <a href="https://example.com"><span class="badge">BASIC</span></a></h1>
+        <p class="subtitle">이미지 조작 분석 도구</p>
+    </header>
+
+    <div class="main-container">
+        <div class="control-panel">
+            <label class="file-label">
+                + 원본 이미지 업로드
+                <input type="file" id="fileInput" accept="image/*">
+            </label>
+
+            <div>
+                <div class="section-title">분석 실행</div>
+                <div class="btn-group">
+                    <button class="btn" id="elaBtn" disabled>🔍 ELA 분석</button>
+                    <button class="btn" id="metaBtn" disabled>📄 메타데이터 (EXIF)</button>
+                    <button class="btn btn-reset" id="resetBtn" style="border-color: var(--spx-danger); color: var(--spx-danger);" disabled>화면 초기화</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-title">도구</div>
+                <div class="btn-group">
+                    <button class="btn" id="downloadBtn" disabled>💾 결과 저장</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-title">시스템 로그</div>
+                <div class="info-box" id="infoBox">
+> 시스템 준비됨
+> 입력 대기 중...
+                </div>
+            </div>
+
+            <div class="guide">
+                <div class="section-title">가이드</div>
+                <strong>1. ELA (Error Level Analysis)</strong><br>압축 레벨을 시각화합니다. 균일한 노이즈는 원본일 확률이 높으며, 높은 대비는 조작 가능성을 시사합니다.<br><br>
+                <strong>2. 메타데이터 (Metadata)</strong><br>이미지에 숨겨진 EXIF 데이터를 추출합니다.<br><br>
+                <strong>3. 보안 (Privacy)</strong><br>모든 처리는 외부 전송 없이 브라우저 내부에서만 수행됩니다.
+            </div>
+        </div>
+
+        <div class="canvas-area">
+            <div class="canvas-wrapper" id="canvasContainer">
+                <div class="loading-overlay" id="loadingMsg">데이터 처리 중...</div>
+                <div id="magnifier" class="magnifier"></div>
+                
+                <p id="placeholderText" style="font-family: var(--font-mono); color: var(--spx-text-muted); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">
+                    데이터 없음
+                </p>
+                <canvas id="mainCanvas"></canvas>
+            </div>
+            <div class="tip-text">/// 마우스를 올려 세부 정보 확대 | 클릭 유지 시 원본과 비교 ///</div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

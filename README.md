@@ -26,7 +26,7 @@ Easy Forensics Basic은 웹 브라우저에서 실행되는 이미지 조작 분
 **요구 사항**: 최신 브라우저 (Chrome, Firefox, Edge, Safari)
 
 1. **로컬 실행**
-   - `index.html` 파일을 브라우저로 열기
+   - `index.html` 파일을 브라우저로 열기 [실행하기](<https://jtech-co.github.io/Easy-Forensics-Basic/index.html>)
    - 또는 로컬 웹 서버 사용:
      ```bash
      # Python 3
@@ -68,4 +68,5 @@ Basic/
 - **License**: MIT
 - **Version**: Basic
 - **Browser Support**: 최신 브라우저 권장 (Canvas API, FileReader API 지원 필요)
+
 

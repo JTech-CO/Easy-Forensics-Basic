@@ -49,7 +49,7 @@ Basic/
 │   └── styles.css         # 스타일시트
 ├── js/
 │   └── main.js            # 메인 JavaScript 로직
-└── Easy Forensics Basic.html  # 레거시 파일 (보존)
+└── README.md
 ```
 
 ## 5. 사용 방법 (Usage)
@@ -68,3 +68,4 @@ Basic/
 - **License**: MIT
 - **Version**: Basic
 - **Browser Support**: 최신 브라우저 권장 (Canvas API, FileReader API 지원 필요)
+
